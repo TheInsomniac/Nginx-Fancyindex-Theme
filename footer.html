@@ -1,0 +1,19 @@
+
+</div>
+</div>
+<script>
+  var loc = document.location.pathname;
+  var segments = loc.split('/');
+  var breadcrumbs = '';
+  var currentPath = '/';
+  var domain = document.domain;
+  for (var i=0; i<segments.length; i++) {
+          if (segments[i] != '') {
+                  currentPath += segments[i] + '/';
+                  breadcrumbs += '<a href="' +  currentPath + '">' + unescape(segments[i]) + '<\/a>';
+          }
+  }
+  document.getElementById('breadcrumbs').innerHTML = breadcrumbs;
+</script>
+</body>
+</html>
