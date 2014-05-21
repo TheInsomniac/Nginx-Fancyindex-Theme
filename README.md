@@ -23,3 +23,7 @@ module can be found at the dev's [github page](https://github.com/aperezdc/ngx-f
  - Added HTML5 History for quicker page transitions.
 
 ![Image1](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme/master/images/fancyindex.png)
+
+![Image1](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme/master/images/fancyindex1.png)
+
+![Image1](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme/master/images/fancyindex2.png)
