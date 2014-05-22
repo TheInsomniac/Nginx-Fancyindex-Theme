@@ -47,7 +47,7 @@
 }
 
 html, body {
-  height: 100%;
+  /* height: 100%; */
   font-size: 100%;
   background-color: #f7f7f7;
   font-family: "ProximaNova";
