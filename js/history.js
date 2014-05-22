@@ -35,7 +35,10 @@ if (!!(window.history && history.pushState)) {
       for (var i = 0; i < segments.length; i++) {
         if (segments[i] !== '') {
           currentPath += segments[i] + '/';
-          breadcrumbs += '<a href="' + currentPath + '">' + window.unescape(segments[i]) + '<\/a>';
+          breadcrumbs += '<a href="' +  currentPath + '">' + window.unescape(segments[i]) + '<\/a>';
+        } else if (segments.length -1 !== i) {
+          currentPath += '';
+          breadcrumbs += '<a href="' + currentPath + '">Root<\/a>';
         }
       }
       document.getElementById('breadcrumbs').innerHTML = breadcrumbs;

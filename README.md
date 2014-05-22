@@ -35,6 +35,10 @@ To:
  - Slightly better handling of mobile CSS click areas.
  - Added HTML5 History for quicker page transitions.
 
+#####Addendums:
+ - If you want your 'Parent Directory/' listing back in your file listings:
+  - Read: [This Issue](https://github.com/TheInsomniac/Nginx-Fancyindex-Theme/issues/1#issuecomment-43936700)
+
 ![Image1](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme/master/images/fancyindex.png)
 
 ![Image1](https://raw.githubusercontent.com/TheInsomniac/Nginx-Fancyindex-Theme/master/images/fancyindex1.png)
