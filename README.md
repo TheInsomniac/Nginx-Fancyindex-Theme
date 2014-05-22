@@ -15,8 +15,7 @@ From:
 
 To:
 
-    #define NGX_HTTP_FANCYINDEX_NAME_LEN 500 (or some other number greater than
-50)
+    #define NGX_HTTP_FANCYINDEX_NAME_LEN 500 (or some other number greater than 50)
 
 #####Usage:
  - Compile nginx with the fancyindex module.
