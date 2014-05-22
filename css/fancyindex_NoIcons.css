@@ -78,9 +78,9 @@ html, body {
 }
 
 .box .box-content {
-  padding: 20px;
+  width: 97%;
+  margin: 20px auto;
   background: #fff;
-  width: 100%;
 }
 
 .box.box-breadcrumbs .box-header {

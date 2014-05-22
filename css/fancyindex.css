@@ -78,9 +78,9 @@ html, body {
 }
 
 .box .box-content {
-  padding: 20px;
+  width: 97%;
+  margin: 20px auto;
   background: #fff;
-  width: 100%;
 }
 
 .box.box-breadcrumbs .box-header {
@@ -460,7 +460,7 @@ a:hover {
 
   #list a[href$=".avi"]:before, #list a[href$=".mp4"]:before,
   #list a[href$=".mkv"]:before, #list a[href$=".divx"]:before,
-  #list a[href$=".wmv"]:before { 
+  #list a[href$=".wmv"]:before {
           background: url('../icons/video.png') left center no-repeat;
   }
 }
