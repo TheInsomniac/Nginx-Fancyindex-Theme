@@ -4,6 +4,20 @@ NGINX FancyIndex Theme
 A prettier theme for nginx' fancyindex module. Further details about this excellent
 module can be found at the dev's [github page](https://github.com/aperezdc/ngx-fancyindex).
 
+####NOTE:
+NGX-FANCYINDEX truncates the file name to 50 characters subtracts 3 and then
+appends a "..>" to the truncated name. This can be fixed by recompiling
+NGX-FANCYINDEX after changing line 55 of "ngx_http_fancyindex_module.c":
+
+From:
+
+    #define NGX_HTTP_FANCYINDEX_NAME_LEN 50
+
+To:
+
+    #define NGX_HTTP_FANCYINDEX_NAME_LEN 500 (or some other number greater than
+50)
+
 #####Usage:
  - Compile nginx with the fancyindex module.
  - Include the contents of 'fancyindex.conf' in your location directive of your nginx conf.
