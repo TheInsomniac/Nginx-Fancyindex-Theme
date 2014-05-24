@@ -27,8 +27,9 @@ if (!!(window.history && history.pushState)) {
   })();
 
   var updateCrumbs = function() {
+    window.document.title = window.location.pathname;
     setTimeout(function () {
-      var loc = document.location.pathname;
+      var loc = window.location.pathname;
       var segments = loc.split('/');
       var breadcrumbs = '';
       var currentPath = '/';
@@ -62,6 +63,10 @@ if (!!(window.history && history.pushState)) {
       target.innerHTML = elements.innerHTML;
       initHistory();
       return true;
+    // Terrible error catching implemented! Basically, if the ajax request fails
+    // we'll just refresh the entire page with the new URL.
+    } else {
+      window.location.replace(href);
     }
     return false;
   };
@@ -81,7 +86,7 @@ if (!!(window.history && history.pushState)) {
   };
 
   addEvent(window, 'popstate', function (e) {
-    swapPage(location.pathname);
+    swapPage(window.location.pathname);
     updateCrumbs();
   });
 

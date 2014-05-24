@@ -34,6 +34,8 @@ To:
   - If you'd prefer no icons at all: copy css\fancyindex_NoIcons.css css\fancyindex.css
  - Slightly better handling of mobile CSS click areas.
  - Added HTML5 History for quicker page transitions.
+  - This can be disabled by commenting out the script tag in footer.html
+ - Fixed CSS issues on older versions of FF
 
 #####Addendums:
  - If you want your 'Parent Directory/' listing back in your file listings:
