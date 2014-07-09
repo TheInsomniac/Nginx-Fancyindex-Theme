@@ -198,7 +198,7 @@ a:hover {
           content: "";
   }
 
-  #list a[href$="/"]:before {
+  #list a[href$="/"]:before, #list a[href*="/?"]:before {
           background: url('../icons/folder_black.png') left center no-repeat;
   }
 
